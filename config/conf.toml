@@ -1,0 +1,32 @@
+DisablePathCorrection = false
+EnablePathEscape = false
+FireMethodNotAllowed = false
+DisableBodyConsumptionOnUnmarshal = false
+TimeFormat = "2006-01-02 15:04:00"
+Charset = "UTF-8"
+[Other]
+    [Other.App]
+        Name = "go-web-learn"
+        URl = "http://localhost"
+        Port = ":8081"
+        LoggerLevel = "debug" # "disable" "fatal" "error" "warn""info" "debug"
+        DataBaseDirver = "Mysql" # "Mysql" "Sqlite"
+    [Other.Mysql]
+        DirverName = "mysql"
+        Name ="block"
+        TestName ="block"
+        Connect ="root:password@(127.0.0.1:3306)"
+#    [Other.Mongodb]
+#        Connect = "mongodb://root:123456@127.0.0.1:27017/admin"
+#    [Other.Sqlite]
+#        DirverName = "sqlite3"
+#        Connect = "./tmp/gorm.db"
+#        TestConnect = "./tmp/gorm_test.db"
+    [Other.Redis]
+      Addr = "127.0.0.1:6379"
+      Password = ""
+      DB = "0"
+#    [Other.TestData]
+#          UserName = "username"
+#          Name = "name"
+#          Pwd = "password"
